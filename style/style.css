@@ -1,0 +1,147 @@
+@import url(reset.css);
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap");
+.attribution {
+  margin-top: 50px;
+  font-size: 11px;
+  text-align: center;
+  color: hsl(223, 47%, 23%);
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 16px;
+  background-color: hsl(225, 100%, 94%);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  align-items: center;
+}
+
+.container {
+  max-width: 320px;
+  background-color: hsl(225, 100%, 98%);
+  border-radius: 20px;
+  box-shadow: 0px 25px 25px hsla(0, 0%, 0%, 0.0477);
+}
+
+.row {
+  padding: 40px;
+  text-align: center;
+}
+
+header img {
+  border-radius: 20px 20px 0px 0px;
+  width: 100%;
+}
+
+main h1 {
+  font-size: 26px;
+  font-weight: 900;
+  color: hsl(223, 47%, 23%);
+}
+main p {
+  margin-top: 26px;
+  color: hsl(224, 23%, 55%);
+  line-height: 26px;
+}
+
+.card-pay {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+}
+.card-pay .period {
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+  align-content: flex-start;
+  align-items: flex-start;
+  font-size: 15px;
+}
+.card-pay .time {
+  font-weight: 700;
+  color: hsl(223, 47%, 23%);
+  font-size: 15px;
+}
+.card-pay .period {
+  color: hsl(224, 23%, 55%);
+  font-size: 15px;
+}
+.card-pay .changer {
+  border: 0;
+  background-color: transparent;
+  font-weight: 700;
+  text-decoration: underline;
+  color: hsl(245, 75%, 52%);
+  transition: all 0.5s ease;
+}
+.card-pay .changer:hover {
+  cursor: pointer;
+  text-decoration: none;
+  color: hsl(245, 83%, 68%);
+}
+
+footer {
+  margin-top: 40px;
+}
+footer .pay {
+  width: 100%;
+  height: 50px;
+  border-radius: 10px;
+  border: 0;
+  background-color: hsl(245, 75%, 52%);
+  color: hsl(225, 100%, 98%);
+  font-weight: 900;
+  box-shadow: 0px 25px 25px hsla(0, 0%, 0%, 0.0477);
+  transition: all 0.5s ease;
+}
+footer .pay:hover {
+  cursor: pointer;
+  background-color: hsl(245, 83%, 68%);
+}
+footer .cancel {
+  margin-top: 20px;
+  width: 100%;
+  height: 50px;
+  border-radius: 10px;
+  border: 0;
+  background-color: transparent;
+  color: hsl(224, 23%, 55%);
+  font-weight: 900;
+  transition: all 0.5s ease;
+}
+footer .cancel:hover {
+  cursor: pointer;
+  color: hsl(223, 47%, 23%);
+}
+
+@media only screen and (max-width: 376px) {
+  body {
+    background-image: url(../images/pattern-background-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+@media only screen and (min-width: 376px) {
+  body {
+    background-image: url(../images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .container {
+    max-width: 400px;
+  }
+}/*# sourceMappingURL=style.css.map */
